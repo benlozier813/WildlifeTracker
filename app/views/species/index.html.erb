@@ -1,0 +1,19 @@
+<h1>Wildlife Tracker 5000 (beta)</h1>
+<p>gg no re</p>
+
+
+<form action = '/species/create' method = 'post'>
+  <input type = 'text' name = 'animal_name' placeholder="Animal Name" required autofocus/>
+  <input type = 'submit' value ='Save'/>
+</form>
+
+
+<form action = '/species/edit' method = 'get'>
+  <input type = 'submit' value = 'Edit Animals'</input>
+</form>
+
+<ul>
+  <% @specieses.each do |shakakahn| %>
+    <li><%= shakakahn.name %></li>
+  <% end %>
+</ul>
